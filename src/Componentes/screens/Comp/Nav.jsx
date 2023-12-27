@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Links} from "react-scroll";
 const Nav = () => {
 const links =[
     {
@@ -12,7 +12,7 @@ const links =[
     },
     {
         id:3,
-        link:"Home We Wok",
+        link:"HomeWeWok",
     },
     {
         id:4,
