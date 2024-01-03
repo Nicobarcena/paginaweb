@@ -15,4 +15,66 @@
     width: 100%;
     background-color: #4a4564;
     flex-direction: column;
+    align-items: center;
+    
+}
+
+.navLink {
+    display: flex;
+    
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    padding-top: 80px;
+}
+
+.border{
+    display: flex;
+    height: 1px;
+    animation: anamacion;
+    animation-duration: 1s;
+    background-color: rgb(57, 145, 115);
+}
+
+@keyframes animacionborder{
+    0% {
+        height: 0px;
+    }
+    100%{
+        height: 1px;
+    }
+}
+
+.logo{
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+@media (min-width : 800px) {
+    .logo{
+        font-size: 1.5em;
+    }
+    .Navbar{
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50pxs;
+    }
+    
+    .linksconteiner{
+            display: flex;
+            width: 50%;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .navLink{
+            background-color: black;
+            padding-top: 4pxs;
+            font-size: 1.4em;
+        }
+
+    
 }
