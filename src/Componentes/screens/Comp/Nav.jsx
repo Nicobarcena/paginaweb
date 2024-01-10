@@ -47,9 +47,10 @@ const Nav = ()=>{
             id:4,
             link:"Benedits",
         },
-       
+
     ]
     const scrollPotition = useScrollPotition ()
+    
     return ( 
         <div className= {
             navBarOpen
@@ -57,13 +58,13 @@ const Nav = ()=>{
             : scrollPotition > 0
             ? "navOnScroll"
             : "Navbar"
-                    }>
+                }>
             {!navBarOpen && <p className='logo'>Foja Zero</p> }
             
             {!navBarOpen && windowDimension.width <800   ? 
             ( <FontAwesomeIcon icon={faBars} onClick={() => setNavBarOpen(!navBarOpen)} />
             ): windowDimension.width <800 && (  
-            <FontAwesomeIcon color='#f1f1f1f1' icon={faX} onClick={() => setNavBarOpen(!navBarOpen)}   />
+            <FontAwesomeIcon color='#f1f1f1' icon={faX} onClick={() => setNavBarOpen(!navBarOpen)}   />
             )}
             {navBarOpen &&
                 <ul className='linksconteiner' > 
